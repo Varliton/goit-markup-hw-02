@@ -1,3 +1,50 @@
-body{
-    font-family: 'Roboto', sans-serif;
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #2196f3;
+  --tretiary-text-color: #757575;
+  --primary-background-color:#F5F5F5;
+  --secondary-background-color: #2F303A;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-background-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+}
+.logo-item {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.footer-logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+footer{
+    background-color: var(--secondary-background-color);
+}
+header{
+    background-color: #ffffff;
 }
