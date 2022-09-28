@@ -18,11 +18,9 @@ body {
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  color: var(--primary-text-color);
 }
 
 /* Logo */
@@ -47,25 +45,29 @@ body {
   line-height: 1.14;
   letter-spacing: 00.02em;
 }
-.site-nav .link {
+
+.current{
+  color: var(--secondary-text-color)
+}
+
+.nav-link {
   text-decoration: none;
-  color: var(--primary-text-color);
   font-weight: 500;
 }
-.site-nav .link:hover,
-.site-nav .link:focus{
+.nav-link:hover,
+.nav-link:focus{
   color: var(--secondary-text-color);
 }
 
-.contacts .link {
+.contacts .contact-link {
   color: var(--tretiary-text-color);
   text-decoration: none;
   font-weight: 500;
   
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--secondary-text-color);
 }
 
@@ -101,34 +103,32 @@ body {
 }
 
 /* Features */
-.features-section {
+.features {
   list-style: none;
 }
-.features-section .title {
-  font-weight: 700;
+ .features-title {
   text-transform: uppercase;
-  color: var(--primary-text-color);
+  line-height: 1.14;
 }
-.features-section .text {
+ .features-text {
   color: var(--tretiary-text-color);
 }
 /* Examples */
-.examples-section {
+.examples {
   list-style: none;
 }
 /* Team */
-.team-section {
+.team {
   list-style: none;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
 }
 
-.team-section .title {
+.team-title {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
   color: var(--primary-text-color);
 }
-.team-section .text {
+.team-text {
   font-weight: 400;
   color: var(--tretiary-text-color);
 }
@@ -144,25 +144,32 @@ footer {
   text-decoration: none;
 }
 
-.footer-list {
+.footer{
   list-style: none;
 }
 
-.footer-list .link {
+.footer-link, .footer-contact {
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-white-color);
+  font-style: normal;
 }
-.footer-list .link:hover,
-.footer-list .link:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--secondary-text-color);
 }
 
-.footer-list .contact {
+.footer-contact {
   color: var(--footer-contact-color);
 }
+
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--secondary-text-color);
+}
+
 
 /* Portfolio */
 .categories {
@@ -190,17 +197,14 @@ footer {
   list-style: none;
 }
 
-.works .title {
-  font-weight: 700;
+.work-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
 }
 
-.works .text {
+.work-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--tretiary-text-color);
 }
