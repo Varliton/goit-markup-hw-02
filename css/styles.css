@@ -1,8 +1,8 @@
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #2196f3;
-  --tretiary-text-color: #757575;
-  --primary-white-color:#fff;
+  --tertiary-text-color: #757575;
+  --primary-white-color: #fff;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --primary-background-color: #f5f5f5;
   --secondary-background-color: #2f303a;
@@ -17,8 +17,21 @@ body {
   color: var(--primary-text-color);
 }
 
+/* Утилиты */
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: black solid; 
 }
 
 .section-title {
@@ -42,10 +55,26 @@ body {
 .logo-item {
   color: var(--secondary-text-color);
 }
+
+
 /* Site Nav and Contacts */
 
-.nav-link.current{
-  color: var(--secondary-text-color)
+.main-nav{
+  display: flex;
+  
+}
+
+.site-nav{
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-nav {
+  display: inline-flex;
+}
+
+.link-nav .nav-item:not(:last-child),.contacts-nav .nav-item:not(:last-child){
+  margin-right: 50px;
 }
 
 .nav-link {
@@ -57,12 +86,19 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus{
+.nav-link:focus {
   color: var(--secondary-text-color);
 }
 
+.contacts-nav{
+  display: inline-flex;
+
+}
+
+
+
 .contact-link {
-  color: var(--tretiary-text-color);
+  color: var(--tertiary-text-color);
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
@@ -76,7 +112,7 @@ body {
 }
 
 /* Hero */
-.hero{
+.hero {
   background-color: var(--secondary-background-color);
 }
 
@@ -108,18 +144,17 @@ body {
 
 /* Features */
 
- .features-title {
+.features-title {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
 }
- .features-text {
-  color: var(--tretiary-text-color);
+.features-text {
+  color: var(--tertiary-text-color);
 }
 /* Examples */
 
 /* Team */
-
 
 .team-title {
   font-weight: 500;
@@ -130,7 +165,7 @@ body {
 .team-text {
   font-size: 16px;
   line-height: 1.18;
-  color: var(--tretiary-text-color);
+  color: var(--tertiary-text-color);
 }
 /* Footer */
 footer {
@@ -145,24 +180,18 @@ footer {
   text-decoration: none;
 }
 
-
-.footer-link, .footer-contact {
+.footer-link,
+.footer-contact {
   text-decoration: none;
-  
-  
-  
+
   color: var(--primary-white-color);
   font-style: normal;
 }
-
 
 .footer-contact {
   color: var(--footer-contact-color);
   font-style: normal;
 }
-
-
-
 
 /* Portfolio */
 
@@ -185,7 +214,6 @@ footer {
 }
 /* Works */
 
-
 .work-title {
   font-size: 18px;
   line-height: 2;
@@ -193,7 +221,7 @@ footer {
 }
 
 .work-text {
-  color: var(--tretiary-text-color);
+  color: var(--tertiary-text-color);
   font-size: 16px;
   line-height: 1.88;
 }
